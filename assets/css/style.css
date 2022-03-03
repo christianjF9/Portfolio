@@ -1,0 +1,28 @@
+:root{
+  --primary-color: darkBlue;
+  --secondary-color: gray;
+  --tertiary-color: cyan;
+}
+/*Header*/
+header{
+  background-color: var(--secondary-color);
+}
+header h1{
+color: var(--secondary-color);
+background-color: var(--tertiary-color);
+}
+header nav ul li a{
+  color: var(--tertiary-color);
+}
+.hero h2{
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+}
+.content{
+  color: var(--primary-color);
+}
+.content h1{
+  border-color: var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+  width: 10%;
+}
