@@ -9,6 +9,9 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+a{
+  text-decoration: none;
+}
 /*Header*/
 header{
   background-color: var(--secondary-color);
@@ -28,7 +31,7 @@ padding-bottom: 0;
 font-size: 50px;
 }
 header a {
-  text-decoration: none;
+
   color: var(--tertiary-color);
 }
 header nav {
@@ -55,9 +58,29 @@ header nav ul li a{
 }
 .content{
   color: var(--primary-color);
+  display: flex;
 }
 .content h1{
-  border-color: var(--primary-color);
-  border-right: 3px solid var(--primary-color);
+
   width: 10%;
+}
+.right-column{
+  border-color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+}
+.contacts{
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: 90px;
+}
+.contact{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 3px solid;
+  border-color: var(--primary-color);
+  color: black;
+  font-size: large;
+}
+.contact a{
+ color: black;
 }
