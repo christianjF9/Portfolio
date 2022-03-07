@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Purpose
-to showcse my web design work.
+to showcase my web design work.
 
 ## Built With
 * HTML
