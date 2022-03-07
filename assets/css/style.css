@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+}
+:root{
+  --primary-color: darkBlue;
+  --secondary-color: rgb(58, 57, 57);
+  --tertiary-color: cyan;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/*Header*/
+header{
+  background-color: var(--secondary-color);
+  padding: 10px 35px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header h1{
+color: var(--secondary-color);
+background-color: var(--tertiary-color);
+margin: 0;
+padding-left: 75px;
+padding-right: 10px;
+padding-top: 0;
+padding-bottom: 0;
+font-size: 50px;
+}
+header a {
+
+  color: var(--tertiary-color);
+}
+header nav {
+  margin: 7px 0;
+}
+header nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+header nav ul li a{
+  color: var(--tertiary-color);
+  border-bottom: 3px solid;
+  font-size: x-large;
+  padding: 10px 15px;
+  margin-left: 7px ;
+}
+
+
+/*content*/
+.content{
+  text-align: right;
+  color: var(--primary-color);
+  display: flex;
+  margin-top: 50px;
+  
+}
+.content h1{
+  width: 200px;
+  flex-shrink: 0;
+  font-size: 350%;
+  padding-right: 10px;
+}
+.right-column{
+  border-color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+  padding-left: 55px;
+  width: 100%;
+}
+
+.right-column p{
+  text-align: left;
+  padding-left: 2%;
+  color: var(--secondary-color);
+  line-height: 1.75;
+}
+
+/*work*/
+
+.work{
+  text-align: left;
+}
+
+.work-display
+{
+  position: relative;
+  width: 45%;
+  margin-left: 2%;
+  display: inherit;
+  margin-top: 10px;
+
+}
+
+
+
+.hover {
+  background-color: gray;
+  z-index: 5;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 98.5%;
+  opacity: 50%;
+  padding-right: 1.5%;
+}
+.hover:hover{
+  opacity: 0%;
+}
+
+.work img{
+  border: 5px solid;
+  border-color: var(--tertiary-color);
+  aspect-ratio: 1025/450;
+  width: 100%;
+  height: auto;
+
+
+}
+.work h2{
+  position: absolute;
+  bottom: 80px;
+  left: 0px;
+  z-index: 10;
+  background-color: var(--tertiary-color);
+  padding:20px 10px;
+  color: black;
+}
+.main-website {
+  width: 92.5%;
+  height: auto;
+
+}
+.main-website .hover {
+  padding-right: 0.7%;
+  height: 99.5%;
+}
+.other-sites{
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+
+
+/*contacts*/
+.contacts{
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: 90px;
+  align-content: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.contact{
+  border-bottom: 3px solid;
+  border-color: var(--primary-color);
+  color: black;
+  font-size: large;
+  font-style: normal;
+}
+.contact a{
+ color: black;
+}
+
+      /*MEDIA QUERY FOR TABLETS AND SMALLER */
+      @media screen and (max-width:768px) {
+        header{
+          display: block;
+        }
+        
+        header nav ul li a {
+          margin-left: 15px;
+          font-size: large;
+         }
+
+        .content {
+          display: block;
+          
+        }
+        .hover{
+          opacity: 0;
+        }
+        .content h1{
+          border-bottom: 3px solid var(--primary-color);
+          border-color: var(--primary-color);
+
+          width: 100%;
+          text-align: center;
+        }
+        .right-column{
+          padding-left: 0;
+          border-left: none;
+          margin: 20px;
+        }
+    /* MEDIA QEURY FO MOBILE PHONES AND SMALLER*/
+    @media screen and (max-width:575px) {
+
+      .content h1
+      {
+        text-align: left;
+      }
+      .right-column{
+        padding-left: 10px;
+        margin: 0;
+        margin-top: 20px;
+      }
+      .right-column p{
+        padding-left: 0;
+      }
+      .contacts{
+        text-align: left;
+        display: flex;
+      }      
+      .main-website{
+        position: relative;
+        width: 60%;
+        margin-left: 2%;
+        display: inherit;
+        margin-top: 10px;
+      }
+      .work-display{
+        width: 60%;
+      }
+      .contact{
+        margin-top: 26px;
+        margin-right: 120px;
+      }
+
+    }
+  }
